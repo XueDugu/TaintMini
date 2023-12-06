@@ -3,8 +3,9 @@ from taint_mini import taintmini
 import argparse
 import os
 
-
+# 主函数
 def main():
+    # 获取命令行指令，在对应指令时触发。[创建命令行解析器，argparse.RawTextHelpFormatter 是一种帮助消息格式，它保留文本中的空白和换行符，以保持原始文本的格式。]
     parser = argparse.ArgumentParser(prog="taint-mini",
                                      formatter_class=argparse.RawTextHelpFormatter)
 
