@@ -1,3 +1,5 @@
+借鉴一下，逐行仔细手打注释，加深一下理解。（改了之后一直被不对，决定学习一下）
+
 # TaintMini
 
 TaintMini is a framework for detecting flows of sensitive data in Mini-Programs with static taint analysis. It is a novel universal data flow graph approach that captures data flows within
