@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/service/index",
+        "pages/index/index",
+        "pages/my-message/index",
+        "pages/my-message-detail/index",
+        "pages/message/index",
+        "pages/service-message1/index",
+        "pages/webview/index",
+        "pages/service-message2/index",
+        "pages/auth/index",
+        "pages/informations/index",
+        "pages/information/index",
+        "pages/detail/index",
+        "pages/guide/index",
+        "pages/center/index"
+    ],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "辽宁省公安厅机场公安局",
+        "navigationBarBackgroundColor": "#2b64a7",
+        "backgroundColor": "#2b64a7"
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#2b64a7",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/service/index",
+                "text": "服务大厅",
+                "iconPath": "static/tabbar/tabbar3.png",
+                "selectedIconPath": "static/tabbar/tabbar3s.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "政务公开",
+                "iconPath": "static/tabbar/tabbar1.png",
+                "selectedIconPath": "static/tabbar/tabbar1s.png"
+            },
+            {
+                "pagePath": "pages/center/index",
+                "text": "个人中心",
+                "iconPath": "static/tabbar/tabbar4.png",
+                "selectedIconPath": "static/tabbar/tabbar4s.png"
+            }
+        ]
+    }
+}
