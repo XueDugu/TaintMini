@@ -3,31 +3,42 @@ from pdg_js import node as _node
 from pdg_js.build_pdg import get_data_flow
 from .storage import Storage
 
-
+# 生成数据流图
 def gen_pdg(file_path, results_path):
+    # 调用get_data_flow生成数据流图，并保存在results_path/intermediate-data
     return get_data_flow(file_path, benchmarks=dict(), alt_json_path=f"{results_path}/intermediate-data/")
 
-
+# 处理js代码
 def handle_wxjs(r):
+    # 获取数据流
     results = Storage.get_instance().get_results()
+    # 利用列表存储
     results[Storage.get_instance().get_page_path()] = list()
+    # 产生数据点
     find_page_methods_node(r)
 
-
+# 产生数据点
 def find_page_methods_node(r):
+    # 遍历数据流图
     for child in r.children:
+        # 判断数据流图的节点是不是"ExpressionStatement"
+        # [检查当前节点的类型是否是 "ExpressionStatement"，即表达式语句。]
         if child.name == "ExpressionStatement":
+            # [检查当前节点的子节点是否有长度大于零，第一个子节点是否是 "CallExpression"，并且该调用表达式的第一个子节点的属性 "name" 是否为 "Page"。这个条件是在寻找调用了名为 "Page" 的函数的代码块。]
             if len(child.children) > 0 \
                     and child.children[0].name == "CallExpression" \
                     and child.children[0].children[0].attributes["name"] == "Page":
-                # found page expression
+                # [遍历找到的调用表达式的子节点，这里假设调用表达式的第二个子节点（索引为1）是一个包含多个子节点的列表，每个子节点都代表一个方法。]]
                 for method_node in child.children[0].children[1].children:
+                    # [检查每个方法节点是否是函数表达式。]
                     if method_node.attributes["value"]["type"] == "FunctionExpression":
-                        # handle node
+                        # [获取方法的名称，假设该方法是通过一个标识符来定义的。]
                         method_name = method_node.children[0].attributes['name']
+                        # 打印方法名称
                         print(
                             f"[page method] got page method, method name: {method_name}")
                         try:
+                            # [对方法节点进行深度优先搜索。]
                             dfs_search(method_node, method_name)
                         except Exception as e:
                             print(f"[wxjs] error in searching method {method_name}: {e}")
