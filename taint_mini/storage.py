@@ -1,3 +1,4 @@
+# 定义类，用来存储命令行输入的信息
 class Storage:
     instance = None
     node = None
@@ -6,6 +7,7 @@ class Storage:
     page_path = None
     config = None
 
+    # 类初始化
     def __init__(self, _node, _app_path, _path_path, _config):
         self.node = _node
         # data structure: {
