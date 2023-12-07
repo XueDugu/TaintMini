@@ -7,7 +7,7 @@ class Storage:
     page_path = None
     config = None
 
-    # 类初始化
+    # 类初始化，node是数据流图
     def __init__(self, _node, _app_path, _path_path, _config):
         self.node = _node
         # data structure: {
