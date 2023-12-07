@@ -1,0 +1,7 @@
+<view>
+    <view class="foot-h70"></view>
+    <view class="u-flex u-row-center u-col-center foot">
+        <image class="jhicon" src="/static/jhicon.png"></image>
+        <text class="foot-info">辽宁省公安厅机场公安局  版权所有</text>
+    </view>
+</view>

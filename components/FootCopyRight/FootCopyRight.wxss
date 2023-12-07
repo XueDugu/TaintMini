@@ -1,0 +1,23 @@
+.foot,.foot-h70 {
+    height: 70rpx;
+    width: 100%;
+}
+
+.foot {
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    bottom: 0;
+    background-color: #eee;
+}
+
+.foot .foot-info {
+    font-size: 28rpx;
+    color: #a4a4a4;
+    margin-left: 14rpx;
+}
+
+.jhicon {
+    width: 42rpx;
+    height: 40rpx;
+}
