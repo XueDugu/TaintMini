@@ -1,0 +1,33 @@
+<view class="wrap">
+    <view class="u-flex user-box">
+        <block wx:if="{{hasLogin}}">
+            <view class="avatar">
+                <image class="avataricon" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+            </view>
+            <view class="login u-m-t-15">{{userInfo.nickName}}</view>
+        </block>
+        <block wx:else>
+            <view bindtap="__e" class="avatar" data-event-opts="{{[ [ 'tap',[ [ 'redirectLogin',['$event'] ] ] ] ]}}">
+                <image class="avataricon" mode="aspectFill" src="/static/banner.jpg"></image>
+            </view>
+            <view bindtap="__e" class="login u-m-t-15" data-event-opts="{{[ [ 'tap',[ [ 'redirectLogin',['$event'] ] ] ] ]}}">授权登录</view>
+        </block>
+    </view>
+    <view class="nav-box">
+        <view class="title">个人中心</view>
+        <view class="grid-box">
+            <view style="width:50%;">
+                <view bindtap="__e" class="grid-item" data-event-opts="{{[ [ 'tap',[ [ 'redirect',[0] ] ] ] ]}}">
+                    <image class="gridicon" src="/static/center1.png"></image>
+                    <text class="text">我的留言</text>
+                </view>
+            </view>
+            <view style="width:50%;">
+                <view bindtap="__e" class="grid-item" data-event-opts="{{[ [ 'tap',[ [ 'redirect',[1] ] ] ] ]}}">
+                    <image class="gridicon" src="/static/center2.png"></image>
+                    <text class="text">我的申请</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

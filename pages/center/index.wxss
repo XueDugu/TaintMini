@@ -1,0 +1,85 @@
+.user-box {
+    height: 300rpx;
+    background-color: #2b64a7;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-box {
+    margin-top: 35rpx;
+    padding: 20rpx;
+}
+
+.nav-box .title {
+    color: #0d91ff;
+    font-size: 37rpx;
+    line-height: 32rpx;
+    padding-left: 26rpx;
+    position: relative;
+}
+
+.nav-box .title::before {
+    content: "";
+    background-color: #0d91ff;
+    width: 8rpx;
+    height: 32rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav-box .grid-box {
+    flex-wrap: wrap;
+}
+
+.nav-box .grid-box,.nav-box .grid-box .grid-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-box .grid-box .grid-item {
+    width: 96%;
+    margin: 30rpx auto 0;
+    border-radius: 8rpx;
+    height: 254rpx;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rpx 15rpx 35rpx 0rpx rgba(0,0,0,.1),0rpx 3rpx 10rpx 0rpx rgba(0,0,0,.07);
+}
+
+.nav-box .grid-box .gridicon {
+    width: 181rpx;
+    height: 180rpx;
+}
+
+.nav-box .grid-box .text {
+    font-size: 28rpx;
+    color: #a4a4a4;
+    margin-bottom: 20rpx;
+}
+
+.my-message {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #dcdfe6;
+    font-size: 30rpx;
+    color: #1b1b1b;
+}
+
+.login {
+    font-size: 26rpx;
+    color: #fff;
+}
+
+.avatar {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    border: 4rpx solid #4b7bb4;
+    overflow: hidden;
+}
+
+.avataricon {
+    width: 100%;
+    height: 100%;
+}

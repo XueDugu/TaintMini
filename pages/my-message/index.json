@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "我的申请",
+    "usingComponents": {
+        "u-empty": "/uview-ui/components/u-empty/u-empty",
+        "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+        "foot-copy-right": "/components/FootCopyRight/FootCopyRight"
+    }
+}

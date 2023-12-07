@@ -1,0 +1,28 @@
+<view class="data-v-7881794f">
+    <view class="content data-v-7881794f">
+        <view class="swiper-box data-v-7881794f">
+            <view class="data-v-7881794f" style="box-shadow:0px 5px 15px #757575;">
+                <u-swiper bind:__l="__l" bind:change="__e" borderRadius="0" class="data-v-7881794f" data-event-opts="{{[ [ '^change',[ ['swiperChange'] ] ] ]}}" height="386" list="{{list}}" mode="none" name="pic_path" vueId="d0a39cd2-1"></u-swiper>
+            </view>
+            <view class="sound-box data-v-7881794f">
+                <image class="sound data-v-7881794f" src="../../static/sound.png"></image>
+                <view class="u-line-1 u-m-l-15 sound-text data-v-7881794f">{{welcomeInfo}}</view>
+            </view>
+            <view class="u-flex u-row-center u-m-t-15 data-v-7881794f">
+                <view class="{{['u-indicator-item-round','data-v-7881794f',index==current?'u-indicator-item-round-active':'']}}" wx:for="{{list}}" wx:key="index"></view>
+            </view>
+        </view>
+        <view class="nav-box data-v-7881794f">
+            <view class="title data-v-7881794f">服务大厅</view>
+            <view class="grid-box data-v-7881794f">
+                <view class="data-v-7881794f" style="width:50%;" wx:for="{{gridList}}" wx:key="index">
+                    <view bindtap="__e" class="grid-item data-v-7881794f" data-event-opts="{{[ [ 'tap',[ [ 'redirect',['$0','$1',index],[ [ ['gridList','',index,'path'] ],[ ['gridList','',index,'weburl'] ] ] ] ] ] ]}}">
+                        <image class="gridicon data-v-7881794f" src="{{item.image}}"></image>
+                        <text class="text data-v-7881794f">{{item.text}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-7881794f" vueId="d0a39cd2-2"></foot-copy-right>
+</view>

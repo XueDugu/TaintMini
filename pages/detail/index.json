@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "详情",
+    "usingComponents": {
+        "u-parse": "/uview-ui/components/u-parse/u-parse",
+        "foot-copy-right": "/components/FootCopyRight/FootCopyRight"
+    }
+}

@@ -1,0 +1,10 @@
+<view class="wrap">
+    <view class="logo">
+        <image class="logoicon" mode="aspectFill" src="/static/banner.jpg"></image>
+    </view>
+    <view class="text">辽宁省公安厅机场公安局</view>
+    <view class="login-tip">
+        <text>请点击授权登录允许辽宁省公安厅机场公安局小程序获取您的信息（用户名、头像等信息）进行登录，否则将无法正常使用小程序的部分功能。</text>
+    </view>
+    <u-button bind:__l="__l" bind:getuserinfo="__e" customStyle="{{buttonStyle}}" data-event-opts="{{[ [ '^getuserinfo',[ ['getUserInfo'] ] ] ]}}" openType="getUserInfo" type="primary" vueId="3d3e5422-1" vueSlots="{{['default']}}">授权登录</u-button>
+</view>

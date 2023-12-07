@@ -1,0 +1,8 @@
+<view class="wrap data-v-12dbf08d">
+    <view class="detail data-v-12dbf08d">
+        <view class="title data-v-12dbf08d">{{dataInfo.title}}</view>
+        <view class="time data-v-12dbf08d">{{dataInfo.addtime}}</view>
+        <u-parse bind:__l="__l" class="data-v-12dbf08d" html="{{content}}" selectable="{{true}}" showWithAnimation="{{true}}" tagStyle="{{tagStyle}}" vueId="48a2a219-1"></u-parse>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-12dbf08d" vueId="48a2a219-2"></foot-copy-right>
+</view>

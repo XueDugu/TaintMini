@@ -1,0 +1,54 @@
+<view class="wrap data-v-4f0160c3">
+    <view class="{{['tips','data-v-4f0160c3',tipShow?'tips-ani':'']}}">刷新成功</view>
+    <view class="list-wrap data-v-4f0160c3" wx:if="{{list.length>0}}">
+        <view bindtap="__e" class="list-wrap-item data-v-4f0160c3" data-event-opts="{{[ [ 'tap',[ [ 'redirectDetail',['$0'],[ [ ['list','id',item.id,'id'] ] ] ] ] ] ]}}" wx:for="{{list}}" wx:for-index="__i0__" wx:key="id">
+            <view class="title u-line-1 data-v-4f0160c3" wx:if="{{item.showstatus==='2'||item.showstatus==='3'||item.showstatus==='4'}}">{{item.title}}</view>
+            <view class="content data-v-4f0160c3">
+                <view class="list-box data-v-4f0160c3" wx:if="{{item.showstatus==='1'}}">
+                    <view class="u-flex left-content-mode2 data-v-4f0160c3">
+                        <view class="title u-line-1 data-v-4f0160c3">{{item.title}}</view>
+                        <view class="title-sub u-line-2 data-v-4f0160c3">
+                            <text class="data-v-4f0160c3">{{item.introduce}}</text>
+                        </view>
+                    </view>
+                    <view class="thumb-image-mode2 data-v-4f0160c3">
+                        <image class="thumb-image data-v-4f0160c3" mode="aspectFill" src="{{item.pic_path}}"></image>
+                    </view>
+                </view>
+                <block wx:else>
+                    <block wx:if="{{item.showstatus==='2'}}">
+                        <view class="title-sub u-line-2 data-v-4f0160c3">{{item.introduce}}</view>
+                        <view class="thumb-image-mode3 data-v-4f0160c3">
+                            <image class="thumb-image data-v-4f0160c3" mode="widthFix" src="{{item.pic_path}}"></image>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <block wx:if="{{item.showstatus==='3'}}">
+                            <view class="title-sub u-line-2 data-v-4f0160c3">{{item.introduce}}</view>
+                            <view class="thumb-more data-v-4f0160c3">
+                                <view class="thumb-box data-v-4f0160c3">
+                                    <image class="thumb data-v-4f0160c3" mode="widthFix" src="{{item.pic_path}}"></image>
+                                </view>
+                                <view class="thumb-box data-v-4f0160c3">
+                                    <image class="thumb data-v-4f0160c3" mode="widthFix" src="{{item.file_path}}"></image>
+                                </view>
+                                <view class="thumb-box data-v-4f0160c3">
+                                    <image class="thumb data-v-4f0160c3" mode="widthFix" src="{{item.icon_path}}"></image>
+                                </view>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <view class="title-sub u-line-2 data-v-4f0160c3" wx:if="{{item.showstatus==='4'}}">{{item.introduce}}</view>
+                            <view class="title-sub u-line-2 data-v-4f0160c3" wx:else>{{item.introduce}}</view>
+                        </block>
+                    </block>
+                </block>
+            </view>
+        </view>
+        <u-loadmore bind:__l="__l" class="data-v-4f0160c3" status="{{status}}" vueId="dda98eba-1"></u-loadmore>
+    </view>
+    <view class="data-v-4f0160c3" wx:else>
+        <u-empty bind:__l="__l" class="data-v-4f0160c3" mode="list" text="数据为空,去其他页面看看吧~" vueId="dda98eba-2"></u-empty>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-4f0160c3" vueId="dda98eba-3"></foot-copy-right>
+</view>

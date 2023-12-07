@@ -1,0 +1,32 @@
+.logo {
+    width: 188rpx;
+    height: 188rpx;
+    border-radius: 50%;
+    border: 4rpx solid #005da4;
+    overflow: hidden;
+    margin: 88rpx auto 0;
+}
+
+.logo .logoicon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    margin-top: 16rpx;
+}
+
+.login-tip,.text {
+    color: #afafaf;
+    font-size: 26rpx;
+}
+
+.login-tip {
+    text-align: left;
+    width: 96%;
+    margin: 58rpx auto 0;
+    text-indent: 2em;
+}

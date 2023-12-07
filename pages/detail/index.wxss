@@ -1,0 +1,16 @@
+.wrap.data-v-12dbf08d {
+    padding: 40rpx;
+}
+
+.title.data-v-12dbf08d {
+    font-size: 32rpx;
+    color: #000;
+    text-align: left;
+}
+
+.time.data-v-12dbf08d {
+    font-size: 24rpx;
+    color: #636363;
+    margin: 12rpx auto;
+    text-align: left;
+}

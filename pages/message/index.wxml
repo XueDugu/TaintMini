@@ -1,0 +1,31 @@
+<view class="wrap data-v-191297be">
+    <u-form bind:__l="__l" class="data-v-191297be vue-ref" data-ref="uForm" errorType="{{['toast']}}" model="{{form}}" rules="{{rules}}" vueId="7b605105-1" vueSlots="{{['default']}}">
+        <u-form-item bind:__l="__l" class="data-v-191297be" label="联系人:" labelStyle="{{labelStyle}}" labelWidth="163" prop="name" vueId="{{'7b605105-2'+','+'7b605105-1'}}" vueSlots="{{['default','right']}}">
+            <u-input bind:__l="__l" bind:input="__e" class="data-v-191297be" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','name','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入您的姓名(必填)" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.name}}" vueId="{{'7b605105-3'+','+'7b605105-2'}}"></u-input>
+            <text class="data-v-191297be" slot="right" style="color:red;">*</text>
+        </u-form-item>
+        <u-form-item bind:__l="__l" class="u-m-t-20 data-v-191297be" label="联系电话:" labelStyle="{{labelStyle}}" labelWidth="163" prop="mobile" vueId="{{'7b605105-4'+','+'7b605105-1'}}" vueSlots="{{['default','right']}}">
+            <u-input bind:__l="__l" bind:input="__e" class="data-v-191297be" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','mobile','$event',[] ],['form'] ] ] ] ]}}" maxlength="11" placeholder="请输入您的手机号码(必填)" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.mobile}}" vueId="{{'7b605105-5'+','+'7b605105-4'}}"></u-input>
+            <text class="data-v-191297be" slot="right" style="color:red;">*</text>
+        </u-form-item>
+        <u-form-item bind:__l="__l" class="u-m-t-20 data-v-191297be" prop="content" vueId="{{'7b605105-6'+','+'7b605105-1'}}" vueSlots="{{['default']}}">
+            <u-input autoHeight="{{true}}" bind:__l="__l" bind:input="__e" border="{{true}}" class="data-v-191297be" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','content','$event',[] ],['form'] ] ] ] ]}}" height="{{295}}" placeholder="请输入您要咨询的内容..." style="{{'color:'+'#8f8f8f'+';'}}" type="textarea" value="{{form.content}}" vueId="{{'7b605105-7'+','+'7b605105-6'}}"></u-input>
+        </u-form-item>
+        <view class="agreement data-v-191297be">
+            <view class="agreement-text data-v-191297be">*承诺：您的隐私将被严格保密。</view>
+        </view>
+        <u-button bind:__l="__l" bind:click="__e" class="data-v-191297be" customStyle="{{customStyle}}" data-event-opts="{{[ [ '^click',[ ['submit'] ] ] ]}}" vueId="{{'7b605105-8'+','+'7b605105-1'}}" vueSlots="{{['default']}}">提交</u-button>
+    </u-form>
+    <view class="message-box data-v-191297be" wx:if="{{messageList.length>0}}">
+        <view class="message-title data-v-191297be">留言展示板</view>
+        <view class="message-list data-v-191297be" wx:for="{{messageList}}" wx:key="index">
+            <view class="top u-flex u-row-between data-v-191297be">
+                <text class="title data-v-191297be">留言内容：<text class="message data-v-191297be">{{item.content}}</text>
+                </text>
+            </view>
+            <view class="respose-message data-v-191297be">
+                <text class="data-v-191297be">回复内容：</text>{{''+item.reply+''}}</view>
+        </view>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-191297be" vueId="7b605105-9"></foot-copy-right>
+</view>

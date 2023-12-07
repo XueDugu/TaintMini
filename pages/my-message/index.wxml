@@ -1,0 +1,89 @@
+<view class="wrap data-v-a8ab633c">
+    <view class="tab data-v-a8ab633c">
+        <view bindtap="__e" class="{{['data-v-a8ab633c',current==0?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'change',[0] ] ] ] ]}}">
+            <image class="messageicon data-v-a8ab633c" src="/static/message.png"></image>
+            <text class="data-v-a8ab633c">我的留言</text>
+        </view>
+        <view bindtap="__e" class="{{['data-v-a8ab633c',current==1?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'change',[1] ] ] ] ]}}">
+            <image class="applyforicon data-v-a8ab633c" src="/static/applyfor.png"></image>
+            <text class="data-v-a8ab633c">我的申请</text>
+        </view>
+    </view>
+    <swiper bindanimationfinish="__e" class="message-box data-v-a8ab633c" current="{{current}}" data-event-opts="{{[ [ 'animationfinish',[ [ 'swiperFinish',['$event'] ] ] ] ]}}">
+        <swiper-item class="swiper-item data-v-a8ab633c">
+            <scroll-view bindscrolltolower="__e" class="data-v-a8ab633c" data-event-opts="{{[ [ 'scrolltolower',[ [ 'scrolltolower',['$event'] ] ] ] ]}}" scrollY="{{true}}" style="width:100%;height:100%;">
+                <view class="data-v-a8ab633c" style="padding-top:200rpx;" wx:if="{{list[0].length===0}}">
+                    <u-empty bind:__l="__l" class="data-v-a8ab633c" mode="list" text="暂无留言信息,去其他页面看看吧~" vueId="6cc00238-1"></u-empty>
+                </view>
+                <view class="data-v-a8ab633c" wx:else>
+                    <view class="message-list data-v-a8ab633c" wx:for="{{$root.l0}}" wx:for-index="__i0__" wx:key="id">
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">姓名：</text>
+                            <text class="right-content data-v-a8ab633c">{{item[$orig].name}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">留言日期：</text>
+                            <text class="right-content data-v-a8ab633c">{{item[$orig].addtime}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">留言内容：</text>
+                            <text class="right-content data-v-a8ab633c">{{item[$orig].content}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">回复状态：</text>
+                            <text class="right-content status data-v-a8ab633c">{{item.f0}}</text>
+                            <view bindtap="__e" class="see-message data-v-a8ab633c" data-event-opts="{{[ [ 'tap',[ [ 'redirectMessage',['$0'],[ [ ['list.__$n0','id',item[$orig].id] ] ] ] ] ] ]}}" wx:if="{{item[$orig].status==='1'}}">点击查看</view>
+                        </view>
+                    </view>
+                    <u-loadmore bind:__l="__l" class="data-v-a8ab633c" status="{{status[0]}}" vueId="6cc00238-2"></u-loadmore>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item class="swiper-item data-v-a8ab633c">
+            <scroll-view bindscrolltolower="__e" class="data-v-a8ab633c" data-event-opts="{{[ [ 'scrolltolower',[ [ 'scrolltolower',['$event'] ] ] ] ]}}" scrollY="{{true}}" style="width:100%;height:100%;">
+                <view class="data-v-a8ab633c" style="padding-top:200rpx;" wx:if="{{list[1].length===0}}">
+                    <u-empty bind:__l="__l" class="data-v-a8ab633c" mode="list" text="暂无申请信息,去其他页面看看吧~" vueId="6cc00238-3"></u-empty>
+                </view>
+                <view class="data-v-a8ab633c" wx:else>
+                    <view class="message-list data-v-a8ab633c" wx:for="{{$root.l1}}" wx:for-index="indexs" wx:for-item="items" wx:key="id">
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">申请类型：</text>
+                            <text class="right-content data-v-a8ab633c">{{items[$orig].type==='1'?'背景调查申办':'无犯罪记录申办'}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">申请号：</text>
+                            <text class="right-content data-v-a8ab633c">{{items[$orig].number}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">申请人姓名：</text>
+                            <text class="right-content data-v-a8ab633c">{{items[$orig].name}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">申请日期：</text>
+                            <text class="right-content data-v-a8ab633c">{{items[$orig].addtime}}</text>
+                        </view>
+                        <view class="data-v-a8ab633c">
+                            <text class="left-label data-v-a8ab633c">审核状态：</text>
+                            <text class="right-content status data-v-a8ab633c">{{items.f1}}</text>
+                            <view bindtap="__e" class="see-message data-v-a8ab633c" data-event-opts="{{[ [ 'tap',[ [ 'downLoadFile',['$0'],[ [ ['list.__$n1','id',items[$orig].id,'files_path'] ] ] ] ] ] ]}}" wx:if="{{items[$orig].files_path}}">下载附件</view>
+                            <view bindtap="__e" class="see-message data-v-a8ab633c" data-event-opts="{{[ [ 'tap',[ [ 'downLoadFile',['$0'],[ [ ['list.__$n1','id',items[$orig].id,'excel_path'] ] ] ] ] ] ]}}" style="right:148rpx;" wx:if="{{items[$orig].excel_path}}">下载申请表单</view>
+                        </view>
+                        <view class="u-flex refuse-info data-v-a8ab633c">
+                            <view class="left-label data-v-a8ab633c">备注：</view>
+                            <view class="right-content data-v-a8ab633c">{{items[$orig].reason||'无'}}</view>
+                        </view>
+                        <view class="u-flex evaluate data-v-a8ab633c" wx:if="{{items[$orig].status!=='0'}}">
+                            <view class="left-label data-v-a8ab633c">对本次服务进行评价：</view>
+                            <view class="right-content u-flex data-v-a8ab633c">
+                                <view bindtap="__e" class="{{['appraise','data-v-a8ab633c',items[$orig].score==='1'?'satifaction':'nosatifaction']}}" data-event-opts="{{[ [ 'tap',[ [ 'appraise',['$0','$1','1',indexs],[ [ ['list.__$n1','id',items[$orig].id,'id'] ],[ ['list.__$n1','id',items[$orig].id,'type'] ] ] ] ] ] ]}}" wx:if="{{items[$orig].score==='1'||items[$orig].score==='0'}}">满意</view>
+                                <view bindtap="__e" class="{{['appraise','u-m-l-20','data-v-a8ab633c',items[$orig].score==='2'?'satifaction':'nosatifaction']}}" data-event-opts="{{[ [ 'tap',[ [ 'appraise',['$0','$1','2',indexs],[ [ ['list.__$n1','id',items[$orig].id,'id'] ],[ ['list.__$n1','id',items[$orig].id,'type'] ] ] ] ] ] ]}}" wx:if="{{items[$orig].score==='2'||items[$orig].score==='0'}}">不满意</view>
+                            </view>
+                        </view>
+                    </view>
+                    <u-loadmore bind:__l="__l" class="data-v-a8ab633c" status="{{status[1]}}" vueId="6cc00238-4"></u-loadmore>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <foot-copy-right bind:__l="__l" class="data-v-a8ab633c" vueId="6cc00238-5"></foot-copy-right>
+</view>

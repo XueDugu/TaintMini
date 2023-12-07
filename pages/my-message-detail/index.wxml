@@ -1,0 +1,12 @@
+<view class="wrap data-v-3f2dbf32">
+    <view class="content data-v-3f2dbf32">
+        <view class="top u-flex u-row-between data-v-3f2dbf32">
+            <text class="title data-v-3f2dbf32">留言内容</text>
+            <text class="time data-v-3f2dbf32">{{message.addtime}}</text>
+        </view>
+        <view class="message data-v-3f2dbf32">{{''+message.content+''}}</view>
+        <view class="respose-message data-v-3f2dbf32">
+            <text class="data-v-3f2dbf32">回复内容：</text>{{message.reply+''}}</view>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-3f2dbf32" vueId="b2eaafd8-1"></foot-copy-right>
+</view>

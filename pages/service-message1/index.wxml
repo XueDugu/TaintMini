@@ -1,0 +1,162 @@
+<view class="wrap data-v-6d497ade">
+    <u-picker bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^confirm',[ ['birthdayConfirm'] ] ],[ '^input',[ [ '__set_model',[ '','birthdayShow','$event',[] ] ] ] ] ]}}" mode="time" params="{{params}}" value="{{birthdayShow}}" vueId="3be661e8-1"></u-picker>
+    <u-select bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^confirm',[ ['educationConfirm'] ] ],[ '^input',[ [ '__set_model',[ '','educationShow','$event',[] ] ] ] ] ]}}" list="{{educationList}}" value="{{educationShow}}" vueId="3be661e8-2"></u-select>
+    <u-select bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^confirm',[ ['nationConfirm'] ] ],[ '^input',[ [ '__set_model',[ '','nationShow','$event',[] ] ] ] ] ]}}" list="{{nationList}}" value="{{nationShow}}" vueId="3be661e8-3"></u-select>
+    <u-select bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^confirm',[ ['politicsConfirm'] ] ],[ '^input',[ [ '__set_model',[ '','politicsShow','$event',[] ] ] ] ] ]}}" list="{{politicsList}}" value="{{politicsShow}}" vueId="3be661e8-4"></u-select>
+    <view class="form-box data-v-6d497ade">
+        <u-form bind:__l="__l" class="data-v-6d497ade vue-ref" data-ref="uForm" errorType="{{['toast']}}" model="{{form}}" rules="{{rules}}" vueId="3be661e8-5" vueSlots="{{['default']}}">
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="姓名" labelStyle="{{labelStyle}}" labelWidth="230" prop="name" vueId="{{'3be661e8-6'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','name','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写您的姓名" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.name}}" vueId="{{'3be661e8-7'+','+'3be661e8-6'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="性别" labelStyle="{{labelStyle}}" labelWidth="230" prop="sex" vueId="{{'3be661e8-8'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <view class="u-flex sex-box data-v-6d497ade">
+                    <view bindtap="__e" class="{{['view','data-v-6d497ade',form.sex===1?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">男</view>
+                    <view bindtap="__e" class="{{['u-m-l-16','view','data-v-6d497ade',form.sex===0?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}">女</view>
+                </view>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="文化程度" labelStyle="{{labelStyle}}" labelWidth="230" prop="education" vueId="{{'3be661e8-9'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:click="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^click',[ ['e2'] ] ],[ '^input',[ [ '__set_model',[ '$0','education','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="如：小学/中学/高中/本科/本科以上" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.education}}" vueId="{{'3be661e8-10'+','+'3be661e8-9'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="民族" labelStyle="{{labelStyle}}" labelWidth="230" prop="nation" vueId="{{'3be661e8-11'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:click="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^click',[ ['e3'] ] ],[ '^input',[ [ '__set_model',[ '$0','nation','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="请选择您的民族" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.nation}}" vueId="{{'3be661e8-12'+','+'3be661e8-11'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="出生年月日" labelStyle="{{labelStyle}}" labelWidth="230" prop="birthday" vueId="{{'3be661e8-13'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:click="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^click',[ ['e4'] ] ],[ '^input',[ [ '__set_model',[ '$0','birthday','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="请选择您的出生年月日" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.birthday}}" vueId="{{'3be661e8-14'+','+'3be661e8-13'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="年龄" labelStyle="{{labelStyle}}" labelWidth="230" prop="old" vueId="{{'3be661e8-15'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','old','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写您的年龄" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.old}}" vueId="{{'3be661e8-16'+','+'3be661e8-15'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="政治面貌" labelStyle="{{labelStyle}}" labelWidth="230" prop="politics" vueId="{{'3be661e8-17'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:click="__e" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^click',[ ['e5'] ] ],[ '^input',[ [ '__set_model',[ '$0','politics','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="请选择您的政治面貌" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.politics}}" vueId="{{'3be661e8-18'+','+'3be661e8-17'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="户籍地址" labelStyle="{{labelStyle}}" labelWidth="230" prop="address" vueId="{{'3be661e8-19'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','address','$event',[] ],['form'] ] ] ] ]}}" placeholder="按户口户籍地址填写" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.address}}" vueId="{{'3be661e8-20'+','+'3be661e8-19'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="现住址" labelStyle="{{labelStyle}}" labelWidth="230" prop="newaddress" vueId="{{'3be661e8-21'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','newaddress','$event',[] ],['form'] ] ] ] ]}}" placeholder="（如：小区、单元、楼层、室）" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.newaddress}}" vueId="{{'3be661e8-22'+','+'3be661e8-21'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="联系电话" labelStyle="{{labelStyle}}" labelWidth="230" prop="mobile" vueId="{{'3be661e8-23'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','mobile','$event',[] ],['form'] ] ] ] ]}}" maxlength="11" placeholder="请输入您的手机号码" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.mobile}}" vueId="{{'3be661e8-24'+','+'3be661e8-23'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="身份证号码" labelStyle="{{labelStyle}}" labelWidth="230" prop="idcard" vueId="{{'3be661e8-25'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','idcard','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写您的身份证号码" style="{{'color:'+'#8f8f8f'+';'}}" value="{{form.idcard}}" vueId="{{'3be661e8-26'+','+'3be661e8-25'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="工作单位" labelStyle="{{labelStyle}}" labelWidth="230" prop="work" vueId="{{'3be661e8-27'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','work','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写工作单位名称" value="{{form.work}}" vueId="{{'3be661e8-28'+','+'3be661e8-27'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="入职部门" labelStyle="{{labelStyle}}" labelWidth="230" prop="post" vueId="{{'3be661e8-29'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','post','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写您的部门" value="{{form.post}}" vueId="{{'3be661e8-30'+','+'3be661e8-29'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" label="入职职务" labelStyle="{{labelStyle}}" labelWidth="230" prop="job" vueId="{{'3be661e8-31'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','job','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写您的职务" value="{{form.job}}" vueId="{{'3be661e8-32'+','+'3be661e8-31'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" labelWidth="230" prop="photo" vueId="{{'3be661e8-33'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <view class="photo-wrap data-v-6d497ade">
+                    <view class="title data-v-6d497ade">二寸照片上传</view>
+                    <view bindtap="__e" class="photo-box data-v-6d497ade" data-event-opts="{{[ [ 'tap',[ [ 'uploadPhoto',[0] ] ] ] ]}}">
+                        <image class="twophoto data-v-6d497ade" mode="scaleToFill" src="{{form.photo}}"></image>
+                    </view>
+                </view>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" labelWidth="230" prop="resume" vueId="{{'3be661e8-34'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <view class="idcard-photo-box data-v-6d497ade">
+                    <view class="title data-v-6d497ade">请填写个人信息</view>
+                    <view class="data-v-6d497ade">
+                        <view class="sub-title data-v-6d497ade">个人简历</view>
+                        <view class="resume-textarea data-v-6d497ade">
+                            <u-input autoHeight="{{true}}" bind:__l="__l" bind:input="__e" border="{{true}}" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','resume','$event',[] ],['form'] ] ] ] ]}}" height="{{295}}" placeholder="请填写您的个人简历..." type="textarea" value="{{form.resume}}" vueId="{{'3be661e8-35'+','+'3be661e8-34'}}"></u-input>
+                        </view>
+                    </view>
+                </view>
+            </u-form-item>
+            <view class="idcard-photo-box data-v-6d497ade">
+                <view class="sub-title data-v-6d497ade">家庭主要成员及社会关系</view>
+                <view class="box-wrap data-v-6d497ade">
+                    <view class="left-label data-v-6d497ade">配偶</view>
+                    <view class="input-box data-v-6d497ade">
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="spousename" vueId="{{'3be661e8-36'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','spousename','$event',[] ],['form'] ] ] ] ]}}" placeholder="姓名(若无配偶请填'无')" value="{{form.spousename}}" vueId="{{'3be661e8-37'+','+'3be661e8-36'}}"></u-input>
+                        </u-form-item>
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="spousework" vueId="{{'3be661e8-38'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','spousework','$event',[] ],['form'] ] ] ] ]}}" placeholder="工作单位(若无配偶请填'无')" value="{{form.spousework}}" vueId="{{'3be661e8-39'+','+'3be661e8-38'}}"></u-input>
+                        </u-form-item>
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="spousecard" vueId="{{'3be661e8-40'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','spousecard','$event',[] ],['form'] ] ] ] ]}}" placeholder="身份证号(若无配偶请填'无')" value="{{form.spousecard}}" vueId="{{'3be661e8-41'+','+'3be661e8-40'}}"></u-input>
+                        </u-form-item>
+                    </view>
+                </view>
+                <view class="box-wrap data-v-6d497ade">
+                    <view class="left-label data-v-6d497ade">父亲</view>
+                    <view class="left-label-bot data-v-6d497ade">（直接抚养人）</view>
+                    <view class="input-box data-v-6d497ade">
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="fathername" vueId="{{'3be661e8-42'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','fathername','$event',[] ],['form'] ] ] ] ]}}" placeholder="姓名(若已故请填'已故')" value="{{form.fathername}}" vueId="{{'3be661e8-43'+','+'3be661e8-42'}}"></u-input>
+                        </u-form-item>
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="fatherwork" vueId="{{'3be661e8-44'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','fatherwork','$event',[] ],['form'] ] ] ] ]}}" placeholder="工作单位(若已故或无工作单位请填'无')" value="{{form.fatherwork}}" vueId="{{'3be661e8-45'+','+'3be661e8-44'}}"></u-input>
+                        </u-form-item>
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="fathercard" vueId="{{'3be661e8-46'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','fathercard','$event',[] ],['form'] ] ] ] ]}}" placeholder="身份证号(若已故请填'无')" value="{{form.fathercard}}" vueId="{{'3be661e8-47'+','+'3be661e8-46'}}"></u-input>
+                        </u-form-item>
+                    </view>
+                </view>
+                <view class="box-wrap data-v-6d497ade">
+                    <view class="left-label data-v-6d497ade">母亲</view>
+                    <view class="left-label-bot data-v-6d497ade">（直接抚养人）</view>
+                    <view class="input-box data-v-6d497ade">
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="mothername" vueId="{{'3be661e8-48'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','mothername','$event',[] ],['form'] ] ] ] ]}}" placeholder="姓名(若已故请填'已故')" value="{{form.mothername}}" vueId="{{'3be661e8-49'+','+'3be661e8-48'}}"></u-input>
+                        </u-form-item>
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="motherwork" vueId="{{'3be661e8-50'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','motherwork','$event',[] ],['form'] ] ] ] ]}}" placeholder="工作单位(若已故或无工作单位请填'无')" value="{{form.motherwork}}" vueId="{{'3be661e8-51'+','+'3be661e8-50'}}"></u-input>
+                        </u-form-item>
+                        <u-form-item bind:__l="__l" class="data-v-6d497ade" prop="mothercard" vueId="{{'3be661e8-52'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                            <u-input bind:__l="__l" bind:input="__e" class="data-v-6d497ade" customStyle="{{borderBottom:'1px solid #dcdfe6'}}" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','mothercard','$event',[] ],['form'] ] ] ] ]}}" placeholder="身份证号(若已故请填'无')" value="{{form.mothercard}}" vueId="{{'3be661e8-53'+','+'3be661e8-52'}}"></u-input>
+                        </u-form-item>
+                    </view>
+                </view>
+            </view>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" labelWidth="230" prop="declare" vueId="{{'3be661e8-54'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <view class="idcard-photo-box data-v-6d497ade">
+                    <view class="title data-v-6d497ade">违法情况个人信息申报</view>
+                    <view class="data-v-6d497ade">
+                        <view class="sub-title data-v-6d497ade">个人诚信申报如下：</view>
+                        <view class="data-v-6d497ade" style="padding-left:40rpx;">
+                            <u-checkbox-group bind:__l="__l" bind:change="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^change',[ ['declareChange'] ] ] ]}}" vueId="{{'3be661e8-55'+','+'3be661e8-54'}}" vueSlots="{{['default']}}">
+                                <u-checkbox activeColor="#fde6ca" bind:__l="__l" bind:input="__e" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','checked','$event',[] ],[ [ ['declareList','',index] ] ] ] ] ] ]}}" name="{{item.name}}" shape="circle" value="{{item.checked}}" vueId="{{'3be661e8-56-'+index+','+'3be661e8-55'}}" vueSlots="{{['default']}}" wx:for="{{declareList}}" wx:key="index">
+                                    <view class="declare-right-text data-v-6d497ade">{{item.name}}</view>
+                                </u-checkbox>
+                            </u-checkbox-group>
+                        </view>
+                    </view>
+                </view>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" labelWidth="230" prop="declareother" vueId="{{'3be661e8-57'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <view class="idcard-photo-box data-v-6d497ade">
+                    <view class="data-v-6d497ade">
+                        <view class="sub-title data-v-6d497ade">个人诚信申报的其他情况：</view>
+                        <view class="resume-textarea data-v-6d497ade">
+                            <u-input autoHeight="{{true}}" bind:__l="__l" bind:input="__e" border="{{true}}" class="data-v-6d497ade" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','declareother','$event',[] ],['form'] ] ] ] ]}}" height="{{295}}" placeholder="需要说明的其他情况(必填,没有情况填无)..." type="textarea" value="{{form.declareother}}" vueId="{{'3be661e8-58'+','+'3be661e8-57'}}"></u-input>
+                        </view>
+                    </view>
+                </view>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-6d497ade" labelWidth="230" prop="cardPhoto" vueId="{{'3be661e8-59'+','+'3be661e8-5'}}" vueSlots="{{['default']}}">
+                <view class="idcard-photo-box data-v-6d497ade">
+                    <view class="title data-v-6d497ade">上传手持身份证照片</view>
+                    <view bindtap="__e" class="idcard-box data-v-6d497ade" data-event-opts="{{[ [ 'tap',[ [ 'uploadPhoto',[1] ] ] ] ]}}">
+                        <image class="idcard data-v-6d497ade" mode="scaleToFill" src="{{form.cardPhoto}}"></image>
+                    </view>
+                </view>
+            </u-form-item>
+        </u-form>
+    </view>
+    <view class="agreement data-v-6d497ade">
+        <view class="agreement-text data-v-6d497ade">*承诺：您的隐私将被严格保密。</view>
+    </view>
+    <view class="button-box u-flex u-row-between u-col-center data-v-6d497ade">
+        <u-button bind:__l="__l" bind:click="__e" class="data-v-6d497ade" customStyle="{{customStyle}}" data-event-opts="{{[ [ '^click',[ ['getPreviewExcel'] ] ] ]}}" vueId="3be661e8-60" vueSlots="{{['default']}}">背景申办预览</u-button>
+        <u-button bind:__l="__l" bind:click="__e" class="data-v-6d497ade" customStyle="{{customStyle}}" data-event-opts="{{[ [ '^click',[ ['submit'] ] ] ]}}" vueId="3be661e8-61" vueSlots="{{['default']}}">提交申请</u-button>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-6d497ade" vueId="3be661e8-62"></foot-copy-right>
+</view>

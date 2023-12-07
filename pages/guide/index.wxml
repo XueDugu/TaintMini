@@ -1,0 +1,18 @@
+<view class="wrap data-v-3cac36d4">
+    <view class="{{['tips','data-v-3cac36d4',tipShow?'tips-ani':'']}}">刷新成功</view>
+    <view class="list-wrap data-v-3cac36d4" wx:if="{{list.length>0}}">
+        <view bindtap="__e" class="list-wrap-item data-v-3cac36d4" data-event-opts="{{[ [ 'tap',[ [ 'redirectDetail',['$0'],[ [ ['list','id',item.id,'id'] ] ] ] ] ] ]}}" wx:for="{{list}}" wx:for-index="__i0__" wx:key="id">
+            <view class="title u-line-1 data-v-3cac36d4">{{item.title}}</view>
+            <view class="list-box data-v-3cac36d4">
+                <view class="title-sub u-line-2 data-v-3cac36d4">
+                    <text class="data-v-3cac36d4">{{item.introduce}}</text>
+                </view>
+            </view>
+        </view>
+        <u-loadmore bind:__l="__l" class="data-v-3cac36d4" status="{{status}}" vueId="53932f30-1"></u-loadmore>
+    </view>
+    <view class="data-v-3cac36d4" wx:else>
+        <u-empty bind:__l="__l" class="data-v-3cac36d4" mode="list" text="数据为空,去其他页面看看吧~" vueId="53932f30-2"></u-empty>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-3cac36d4" vueId="53932f30-3"></foot-copy-right>
+</view>

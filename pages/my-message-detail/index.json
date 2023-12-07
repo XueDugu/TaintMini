@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "留言回复",
+    "usingComponents": {
+        "foot-copy-right": "/components/FootCopyRight/FootCopyRight"
+    }
+}

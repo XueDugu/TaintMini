@@ -1,0 +1,91 @@
+.content .swiper-box.data-v-57280228 {
+    position: relative;
+    height: 413rpx;
+}
+
+.content .swiper-box .u-indicator-item-round.data-v-57280228 {
+    width: 12rpx;
+    height: 12rpx;
+    margin: 0 6rpx;
+    border-radius: 20rpx;
+    transition: all .5s;
+    background-color: #d1d1d1;
+}
+
+.content .swiper-box .u-indicator-item-round-active.data-v-57280228 {
+    width: 36rpx;
+}
+
+.content .swiper-box .sound-box.data-v-57280228 {
+    width: 100%;
+    height: 42rpx;
+    display: flex;
+    padding-left: 56rpx;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 27rpx;
+    background-color: hsla(0,0%,100%,.3);
+}
+
+.content .swiper-box .sound-box .sound-text.data-v-57280228 {
+    font-size: 26rpx;
+    color: #fff;
+}
+
+.content .swiper-box .sound.data-v-57280228 {
+    width: 37rpx;
+    height: 27rpx;
+}
+
+.content .nav-box.data-v-57280228 {
+    padding: 25rpx;
+}
+
+.content .nav-box .title.data-v-57280228 {
+    color: #0d91ff;
+    font-size: 37rpx;
+    line-height: 32rpx;
+    padding-left: 26rpx;
+    position: relative;
+}
+
+.content .nav-box .title.data-v-57280228::before {
+    content: "";
+    background-color: #0d91ff;
+    width: 8rpx;
+    height: 32rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.content .nav-box .grid-box.data-v-57280228 {
+    flex-wrap: wrap;
+}
+
+.content .nav-box .grid-box.data-v-57280228,.content .nav-box .grid-box .grid-item.data-v-57280228 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .nav-box .grid-box .grid-item.data-v-57280228 {
+    width: 96%;
+    margin: 30rpx auto 0;
+    border-radius: 8rpx;
+    height: 254rpx;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rpx 15rpx 35rpx 0rpx rgba(0,0,0,.1),0rpx 3rpx 10rpx 0rpx rgba(0,0,0,.07);
+}
+
+.content .nav-box .grid-box .gridicon.data-v-57280228 {
+    width: 181rpx;
+    height: 180rpx;
+}
+
+.content .nav-box .grid-box .text.data-v-57280228 {
+    font-size: 28rpx;
+    color: #a4a4a4;
+    margin-bottom: 15rpx;
+}

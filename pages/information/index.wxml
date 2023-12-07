@@ -1,0 +1,95 @@
+<view class="wrap data-v-f36e70f4">
+    <view class="{{['tips','data-v-f36e70f4',tipShow?'tips-ani':'']}}">刷新成功</view>
+    <u-tabs activeColor="#2b64a7" bgColor="#f1f1f1" bind:__l="__l" bind:change="__e" class="data-v-f36e70f4 vue-ref" current="{{navCurrent}}" data-event-opts="{{[ [ '^change',[ ['change'] ] ] ]}}" data-ref="tabs" fontSize="29" inactiveColor="#969696" list="{{navList}}" name="class_name" showBar="{{false}}" vueId="42d0aa40-1"></u-tabs>
+    <u-search actionStyle="{{color:'#999999'}}" actionText="查看" bgColor="#f1f1f1" bind:__l="__l" bind:clear="__e" bind:custom="__e" bind:input="__e" class="u-m-40 data-v-f36e70f4" clearabled="{{true}}" data-event-opts="{{[ [ '^custom',[ ['search'] ] ],[ '^clear',[ ['resetList'] ] ],[ '^input',[ [ '__set_model',[ '','keyword','$event',[] ] ] ] ] ]}}" inputStyle="{{fontWeight:'bold',color:'#999999'}}" searchIconColor="#999999" shape="round" showAction="{{true}}" value="{{keyword}}" vueId="42d0aa40-2"></u-search>
+    <view class="list-wrap data-v-f36e70f4" wx:if="{{list.length>0}}">
+        <view bindtap="__e" class="list-wrap-item data-v-f36e70f4" data-event-opts="{{[ [ 'tap',[ [ 'redirectDetail',['$0'],[ [ ['list','id',item.id,'id'] ] ] ] ] ] ]}}" wx:for="{{list}}" wx:for-index="__i0__" wx:key="id">
+            <view class="title u-line-1 data-v-f36e70f4" wx:if="{{item.showstatus==='2'||item.showstatus==='3'||item.showstatus==='4'}}">{{item.title}}</view>
+            <view class="content data-v-f36e70f4">
+                <view class="list-box data-v-f36e70f4" wx:if="{{item.showstatus==='1'}}">
+                    <view class="u-flex left-content-mode2 data-v-f36e70f4">
+                        <view class="title u-line-1 data-v-f36e70f4">{{item.title}}</view>
+                        <view class="title-sub u-line-2 data-v-f36e70f4">
+                            <text class="data-v-f36e70f4">{{item.introduce}}</text>
+                        </view>
+                        <view class="footer data-v-f36e70f4">
+                            <text class="footer-text data-v-f36e70f4">{{item.addtime}}</text>
+                            <view class="u-m-l-30 data-v-f36e70f4">
+                                <image class="fireicon data-v-f36e70f4" src="/static/fire.png"></image>
+                                <text class="u-m-l-5 data-v-f36e70f4">{{item.clicks}}</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="thumb-image-mode2 data-v-f36e70f4">
+                        <image class="thumb-image data-v-f36e70f4" mode="aspectFill" src="{{item.pic_path}}"></image>
+                    </view>
+                </view>
+                <block wx:else>
+                    <block wx:if="{{item.showstatus==='2'}}">
+                        <view class="title-sub u-line-2 data-v-f36e70f4">{{item.introduce}}</view>
+                        <view class="thumb-image-mode3 data-v-f36e70f4">
+                            <image class="thumb-image data-v-f36e70f4" mode="widthFix" src="{{item.pic_path}}"></image>
+                        </view>
+                        <view class="footer data-v-f36e70f4">
+                            <text class="footer-text data-v-f36e70f4">{{item.addtime}}</text>
+                            <view class="u-m-l-30 data-v-f36e70f4">
+                                <image class="fireicon data-v-f36e70f4" src="/static/fire.png"></image>
+                                <text class="u-m-l-5 data-v-f36e70f4">{{item.clicks}}</text>
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <block wx:if="{{item.showstatus==='3'}}">
+                            <view class="title-sub u-line-2 data-v-f36e70f4">{{item.introduce}}</view>
+                            <view class="thumb-more data-v-f36e70f4">
+                                <view class="thumb-box data-v-f36e70f4">
+                                    <image class="thumb data-v-f36e70f4" mode="widthFix" src="{{item.pic_path}}"></image>
+                                </view>
+                                <view class="thumb-box data-v-f36e70f4">
+                                    <image class="thumb data-v-f36e70f4" mode="widthFix" src="{{item.file_path}}"></image>
+                                </view>
+                                <view class="thumb-box data-v-f36e70f4">
+                                    <image class="thumb data-v-f36e70f4" mode="widthFix" src="{{item.icon_path}}"></image>
+                                </view>
+                            </view>
+                            <view class="footer data-v-f36e70f4">
+                                <text class="footer-text data-v-f36e70f4">{{item.addtime}}</text>
+                                <view class="u-m-l-30 data-v-f36e70f4">
+                                    <image class="fireicon data-v-f36e70f4" src="/static/fire.png"></image>
+                                    <text class="u-m-l-5 data-v-f36e70f4">{{item.clicks}}</text>
+                                </view>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <block wx:if="{{item.showstatus==='4'}}">
+                                <view class="title-sub u-line-2 data-v-f36e70f4">{{item.introduce}}</view>
+                                <view class="footer data-v-f36e70f4">
+                                    <text class="footer-text data-v-f36e70f4">{{item.addtime}}</text>
+                                    <view class="u-m-l-30 data-v-f36e70f4">
+                                        <image class="fireicon data-v-f36e70f4" src="/static/fire.png"></image>
+                                        <text class="u-m-l-5 data-v-f36e70f4">{{item.clicks}}</text>
+                                    </view>
+                                </view>
+                            </block>
+                            <block wx:else>
+                                <view class="title-sub u-line-2 data-v-f36e70f4">{{item.introduce}}</view>
+                                <view class="footer data-v-f36e70f4">
+                                    <text class="footer-text data-v-f36e70f4">{{item.addtime}}</text>
+                                    <view class="u-m-l-30 data-v-f36e70f4">
+                                        <image class="fireicon data-v-f36e70f4" src="/static/fire.png"></image>
+                                        <text class="u-m-l-5 data-v-f36e70f4">{{item.clicks}}</text>
+                                    </view>
+                                </view>
+                            </block>
+                        </block>
+                    </block>
+                </block>
+            </view>
+        </view>
+        <u-loadmore bind:__l="__l" class="data-v-f36e70f4" status="{{status}}" vueId="42d0aa40-3"></u-loadmore>
+    </view>
+    <view class="data-v-f36e70f4" wx:else>
+        <u-empty bind:__l="__l" class="data-v-f36e70f4" mode="list" text="数据为空,去其他页面看看吧~" vueId="42d0aa40-4"></u-empty>
+    </view>
+    <foot-copy-right bind:__l="__l" class="data-v-f36e70f4" vueId="42d0aa40-5"></foot-copy-right>
+</view>

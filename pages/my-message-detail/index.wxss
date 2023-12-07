@@ -1,0 +1,35 @@
+.wrap.data-v-3f2dbf32 {
+    padding: 40rpx;
+}
+
+.content .top .title.data-v-3f2dbf32 {
+    font-size: 30rpx;
+    color: #2e2e2e;
+}
+
+.content .top .time.data-v-3f2dbf32 {
+    font-size: 28rpx;
+    color: #a3a3a3;
+}
+
+.respose-message.data-v-3f2dbf32 {
+    padding: 30rpx;
+    margin-top: 40rpx;
+    background-color: #f8f8f8;
+    border-radius: 8rpx;
+    text-align: left;
+    font-size: 28rpx;
+    color: #a3a3a3;
+}
+
+.respose-message text.data-v-3f2dbf32 {
+    font-size: 30rpx;
+    color: #2e2e2e;
+}
+
+.message.data-v-3f2dbf32 {
+    font-size: 28rpx;
+    color: #a3a3a3;
+    text-align: left;
+    margin-top: 20rpx;
+}

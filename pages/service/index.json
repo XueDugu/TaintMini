@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "服务大厅",
+    "usingComponents": {
+        "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
+        "foot-copy-right": "/components/FootCopyRight/FootCopyRight"
+    }
+}
